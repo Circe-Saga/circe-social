@@ -20,65 +20,75 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <main>
-      <nav aria-label="Site">
-        <a href="/">Circe Social Co.</a>
-        <a href="/team/" aria-current="page">Leadership</a>
-      </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="wordmark" href="/">Circe<span> Social Co.</span></a>
+        <nav aria-label="Site">
+          <a href="/#saga">Saga</a>
+          <a href="/team/" aria-current="page">Leadership</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="team-hero" aria-labelledby="title">
+        <div class="shell">
+          <h1 id="title">Leadership</h1>
+          <p>The founding team of Circe Social Co., a Delaware company based in the SF Bay Area. We make <a href="https://saga.you/">Saga</a>.</p>
+        </div>
+      </section>
 
-      <h1>Leadership</h1>
-      <p class="lede">
-        The founding team of Circe Social Co., a Delaware company based in the SF Bay Area.
-        We make <a href="https://saga.you/">Saga</a>.
-      </p>
-
-      <section aria-label="People">
+      <section class="shell bios" aria-label="People">
         <!-- Keep these bios word-for-word with saga.you/team
              (Saga-React-WebApp src/content/team.ts). The reviewer compares both. -->
         <article class="person">
-          <h3>Jacky Chen</h3>
+          <h2>Jacky Chen</h2>
           <p class="role">Founder &amp; CEO</p>
           <p>
             He founded Saga and leads it full-time. He previously founded Sonder Social and
             worked as a software engineer at Amazon, Invitae, Airbus, NVXL, and Cisco Systems.
             He holds a B.S. in Electrical and Computer Engineering from USC.
           </p>
-          <p><a href="https://www.linkedin.com/in/jackychen8/">LinkedIn</a></p>
+          <p class="profile-link"><a href="https://www.linkedin.com/in/jackychen8/">LinkedIn</a></p>
         </article>
 
         <article class="person">
-          <h3>Andrew Wu</h3>
+          <h2>Andrew Wu</h2>
           <p class="role">Founding Engineer</p>
           <p>
             He has worked as a senior technical consultant at Doc@Asia Group in Taiwan. Before
             that, he worked at JPMorgan Chase and Accutech Systems. He holds a B.S. in Computer
             Science from Ohio State.
           </p>
-          <p><a href="https://www.linkedin.com/in/wuandr/">LinkedIn</a></p>
+          <p class="profile-link"><a href="https://www.linkedin.com/in/wuandr/">LinkedIn</a></p>
         </article>
 
         <article class="person">
-          <h3>Anna Chen</h3>
+          <h2>Anna Chen</h2>
           <p class="role">Head of Design</p>
           <p>
             She leads design at Saga. She also incorporated Circe Social Co. and serves as its
             Company Secretary.
           </p>
-          <p><a href="https://www.linkedin.com/in/annaxchen/">LinkedIn</a></p>
+          <p class="profile-link"><a href="https://www.linkedin.com/in/annaxchen/">LinkedIn</a></p>
         </article>
       </section>
-
-      <footer>
-        <p>
-          Also published at <a href="https://saga.you/team">saga.you/team</a>. Contact:
-          <a href="mailto:support@saga.you">support@saga.you</a>
-        </p>
-        <p>
-          © 2026 Circe Social Co. ·
-          <a href="https://www.crunchbase.com/organization/circe-social-co">Crunchbase</a> ·
-          <a href="https://www.linkedin.com/company/sagayou/">LinkedIn</a>
-        </p>
-      </footer>
     </main>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <h2>Contact</h2>
+          <a href="mailto:support@saga.you">support@saga.you</a>
+        </div>
+        <div class="footer-meta">
+          <p>Also published at <a href="https://saga.you/team">saga.you/team</a>.</p>
+          <p>© 2026 Circe Social Co.</p>
+          <div class="footer-links">
+            <a href="https://www.crunchbase.com/organization/circe-social-co">Crunchbase</a>
+            <a href="https://www.linkedin.com/company/sagayou/">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
